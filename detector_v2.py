@@ -14,7 +14,6 @@ class YOLOFaceDetector:
             results = self.model(frame)
             annotated_frame = frame.copy()
 
-            # Verifica se ci sono rilevamenti
             if results and len(results[0].boxes) > 0:
                 print(f"Rilevati {len(results[0].boxes)} oggetti")
 
